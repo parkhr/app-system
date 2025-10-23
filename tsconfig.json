@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "components/base/CustomTextInput.js", "components/base/CustomText.js", "components/base/layout/CustomLayout.js", "components/base/header/CustomHeader.js", "components/base/CustomButton.js"  ]
 }

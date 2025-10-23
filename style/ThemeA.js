@@ -1,4 +1,4 @@
-import { moderateScale, scale, verticalScale } from './scale';
+import { fontScale, moderateScale, scale, verticalScale } from './scale';
 
 export const Colors = {
   primary: '#4CAF50',
@@ -106,19 +106,19 @@ export const ButtonSizes = {
   small: {
     paddingVertical: verticalScale(9),
     paddingHorizontal: scale(9),
-    fontSize: moderateScale(13),
+    fontSize: fontScale(13),
     width: scale(100)
   },
   medium: {
     paddingVertical: verticalScale(12),
     paddingHorizontal: scale(12),
-    fontSize: moderateScale(16),
+    fontSize: fontScale(16),
     width: scale(150)
   },
   large: {
     paddingVertical: verticalScale(16),
     paddingHorizontal: scale(16),
-    fontSize: moderateScale(18),
+    fontSize: fontScale(18),
     width: scale(200)
   },
 };
@@ -127,19 +127,19 @@ export const InputSizes = {
   small: {
     paddingVertical: verticalScale(6),
     paddingHorizontal: scale(6),
-    fontSize: moderateScale(13),
+    fontSize: fontScale(13),
     width: scale(100)
   },
   medium: {
     paddingVertical: verticalScale(9),
     paddingHorizontal: scale(9),
-    fontSize: moderateScale(16),
+    fontSize: fontScale(16),
     width: scale(150)
   },
   large: {
     paddingVertical: verticalScale(12),
     paddingHorizontal: scale(12),
-    fontSize: moderateScale(18),
+    fontSize: fontScale(18),
     width: scale(200)
   },
 };

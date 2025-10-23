@@ -1,8 +1,8 @@
 import { Ionicons } from "@expo/vector-icons";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
-import { ThemeA as Theme } from '../../style/ThemeA';
+import { ThemeA as Theme } from '../../../style/ThemeA';
 
-const CustomHeader = ({ onBack, onRightPress }) => {
+const CustomHeader2 = ({ onLeftPress, onRightPress }) => {
 
   const getHeaderStyle = () => {
     return {
@@ -16,12 +16,12 @@ const CustomHeader = ({ onBack, onRightPress }) => {
 
   return (
     <View style={[styles.header, getHeaderStyle()]}>
-      <TouchableOpacity onPress={onBack}>
-        <Ionicons name="arrow-back" size={Theme.IconSizes.medium} color={Theme.Colors.headerBackIcon} />
+      <TouchableOpacity onPress={onLeftPress}>
+        <Ionicons name="reorder-two-outline" size={Theme.IconSizes.medium} color={Theme.Colors.headerBackIcon} />
       </TouchableOpacity>
 
       <TouchableOpacity onPress={onRightPress}>
-        <Ionicons name="settings-outline" size={Theme.IconSizes.medium} color={Theme.Colors.headerBackIcon} />
+        <Ionicons name="search-outline" size={Theme.IconSizes.medium} color={Theme.Colors.headerBackIcon} />
       </TouchableOpacity>
     </View>
   );
@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CustomHeader;
+export default CustomHeader2;
