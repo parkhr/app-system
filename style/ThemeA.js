@@ -12,9 +12,10 @@ export const Colors = {
   warning: '#FFB300',
   danger: '#E53935',
   info: '#29B6F6',
-  headerBackground: '#212121',
+  headerBackground: '#E53935',
   headerBackIcon: '#FFFFFF',
   safeAreaBackground: '#212121',
+  statusBarStyle: 'light-content',
   contentBackground: '#FFFFFF',
 };
 

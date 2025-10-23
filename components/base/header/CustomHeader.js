@@ -9,8 +9,8 @@ const CustomHeader = ({ onBack, onRightPress }) => {
       backgroundColor: Theme.Colors.headerBackground,
       borderBottomWidth: 1,
       borderBottomColor: Theme.Colors.border,
-      paddingHorizontal: 16,
-      paddingVertical: 12,
+      paddingHorizontal: Theme.Spacing.medium,
+      paddingVertical: Theme.Spacing.small,
     }
   }
 
