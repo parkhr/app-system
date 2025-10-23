@@ -4,7 +4,7 @@ import CustomButton from '../../components/base/CustomButton';
 import CustomText from '../../components/base/CustomText';
 import CustomLayout from '../../components/base/layout/CustomLayout';
 
-export default function HomeScreen() {
+export default function Detail() {
   return (
     <CustomLayout>
       <View style={styles.container}>
@@ -45,9 +45,6 @@ export default function HomeScreen() {
 
         {/* 마지막 라인 */}
         <View style={styles.line} />
-
-        {/* 오른쪽 여백 */}
-        <View style={{ width: SIDE_PADDING }} />
       </View>
       {/* 첫 번째 행 */}
       <View style={[styles.container, { flex: 1, backgroundColor: '' }]}>
@@ -62,42 +59,8 @@ export default function HomeScreen() {
         >
           <CustomButton title="Hello, Detail!" onPress={() => alert('Button Pressed!')} type="danger" size='large' />
         </View>
-        <View
-          style={{
-            // position: 'absolute',
-            left: columnWidth * 1, // 예: 두 번째 선 기준
-            // top: 50,
-            // transform: [{ translateX: -50 }], // 정중앙 정렬 (옵션)
-          }}
-        >
-          <CustomButton title="Hello, Detail!" onPress={() => alert('Button Pressed!')} type="danger" size='large' />
-        </View>
-
-        <View
-          style={{
-            // position: 'absolute',
-            left: columnWidth * 2, // 예: 두 번째 선 기준
-            // top: 100,
-            // transform: [{ translateX: -50 }], // 정중앙 정렬 (옵션)
-          }}
-        >
-          <CustomButton title="Hello, Detail!" onPress={() => alert('Button Pressed!')} type="danger" size='large' />
-        </View>
-
-        <View
-          style={{
-            // position: 'absolute',
-            left: columnWidth * 3, // 네 번째 선 기준
-            // top: 200,
-            // transform: [{ translateX: -50 }],
-          }}
-        >
-          <CustomButton title="Hello, Detail!" onPress={() => alert('Button Pressed!')} type="danger" size='large' />
-        </View>
       </View>
 
-      {/* 왼쪽 여백 */}
-      <View style={{ width: SIDE_PADDING }} />
 
       {/* 첫 번째 라인 */}
       <View style={styles.line} />
@@ -118,8 +81,6 @@ export default function HomeScreen() {
       {/* 마지막 라인 */}
       <View style={styles.line} />
 
-      {/* 오른쪽 여백 */}
-      <View style={{ width: SIDE_PADDING }} />
 
       <View style={styles.row}>
         {/* 1번째 열 */}
